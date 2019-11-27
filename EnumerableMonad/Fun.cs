@@ -14,5 +14,12 @@ namespace EnumerableMonad
             x => g(x).Bind(f);
 
         public static IEnumerable<T> Join<T>(IEnumerable<IEnumerable<T>> seqOfSeq) => seqOfSeq.Bind(Identity);
+
+        public static IEnumerable<T> Return<T>(T value)
+        {
+            yield return value;
+        }
+
+        public static IEnumerable<T> Pure<T>(T value) => Return(value);
     }
 }
