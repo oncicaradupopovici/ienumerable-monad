@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/EnumerableMonad/bin/Debug/netstandard2.0
+/EnumerableMonad/obj
+/.vs/EnumerableMonad/DesignTimeBuild
+/.vs/EnumerableMonad/v16
+/EnumerableMonad.Tests/bin/Debug
+/EnumerableMonad.Tests/obj
